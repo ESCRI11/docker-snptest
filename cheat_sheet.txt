@@ -1,0 +1,11 @@
+# Build container
+docker build -t snptest_test .
+
+# Run container
+sudo docker run -d -P --name ssh_test snptest_test:latest
+
+# Get local port
+sudo docker port ssh_test 22
+
+# SSH into it
+ssh root@localhost -p xxxxx
