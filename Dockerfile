@@ -6,8 +6,8 @@ RUN	tar zxvf snptest_v2.5.2_linux_x86_64_dynamic.tgz
 RUN	cp snptest_v2.5.2_linux_x86_64_dynamic/snptest_v2.5.2 /usr/local/bin
 RUN	rm -rf snptest_v2.5.2_linux_x86_64_dynamic
 RUN	rm -rf snptest_v2.5.2_linux_x86_64_dynamic.tgz
-RUN	cd /root && apt-get remove -y wget unzip    
-
+RUN	cd /root && apt-get remove -y wget unzip
+RUN	chmod a+x usr/local/bin/snptest_v2.5.2
 
 
 EXPOSE 22

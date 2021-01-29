@@ -8,4 +8,4 @@ sudo docker run -d -P --name ssh_test snptest_test:latest
 sudo docker port ssh_test 22
 
 # SSH into it
-ssh root@localhost -p xxxxx
+ssh master@localhost -p xxxxx
