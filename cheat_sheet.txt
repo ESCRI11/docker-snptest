@@ -9,3 +9,9 @@ sudo docker port ssh_test 22
 
 # SSH into it
 ssh master@localhost -p xxxxx
+
+# Debug purposes
+docker exec -it ssh_test /bin/bash
+
+# Snptest command
+snptest_v2.5.2
