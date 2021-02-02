@@ -9,5 +9,5 @@ services:
         environment:
                 - MASTER_USER=${SSH_MASTER_USER}
                 - MASTER_PASS=${SSH_MASTER_PASS}
-        volumes:
-            - ./data:/home/master
+#        volumes:
+#            - ./data:/home/master
